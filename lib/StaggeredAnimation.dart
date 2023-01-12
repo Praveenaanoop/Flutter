@@ -24,10 +24,11 @@ class MyStaggered extends StatelessWidget{
                 return AnimationConfiguration.staggeredList(
                     position: index,
                     duration: Duration(seconds: 4),
-                    child: SlideAnimation(
-                      verticalOffset: 44.0,
+                    child: ScaleAnimation(
+                      //verticalOffset: 44.0,
                       child: FadeInAnimation(
                         child: Card(
+                          color: Colors.redAccent,
                           child: ListTile(
                             title: Text('$index item'),
                           ),
